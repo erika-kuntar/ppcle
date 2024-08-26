@@ -1,0 +1,17 @@
+os: linux
+dist: focal
+language: java
+jobs:
+  include:
+    - name: ppc64le
+      os: linux
+      arch: ppc64le
+      jdk: openjdk11
+      install: skip
+      script: true
+    - name: s390x
+      os: linux
+      arch: s390x
+      jdk: openjdk11
+      install: skip
+      script: true
